@@ -7,14 +7,14 @@ without storing the media in Git itself.
 
 Setup the attributes filter settings.
 
-	(once after install)
-	$ git config filter.media.clean "git-media filter-clean"
-	$ git config filter.media.smudge "git-media filter-smudge"
+        (once after install)
+        $ git config filter.media.clean "git-media filter-clean"
+        $ git config filter.media.smudge "git-media filter-smudge"
 
 Setup the .gitattributes file to map extensions to the filter.
 
-	(in repo - once)
-	$ echo "*.mov filter=media -crlf" > .gitattributes  
+        (in repo - once)
+        $ echo "*.mov filter=media -crlf" > .gitattributes  
 
 Staging files with those extensions will automatically copy them to the 
 media buffer area (.git/media) until you run 'git media sync' wherein they
