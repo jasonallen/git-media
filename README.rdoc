@@ -49,22 +49,22 @@ or in clone/.git/config (for per-repo settings).
 
 == Usage
 
-	(in repo - repeatedly)
-	$ (hack, stage, commit)
-	$ git media sync
+        (in repo - repeatedly)
+        $ (hack, stage, commit)
+        $ git media sync
 
 You can also check the status of your media files via 
 
-	$ git media status
+        $ git media status
 
 Which will show you files that are waiting to be uploaded and how much data
 that is. If you want to upload & delete the local cache of media files, run:
 
-	$ git media clear
+        $ git media clear
 
 == Config Settings
 
-	$ git config --global media.auto-download false
+        $ git config --global media.auto-download false
 
 
 == Installing 
